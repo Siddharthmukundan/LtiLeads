@@ -17,8 +17,11 @@ namespace LtiLeads.news_web_part
 
         protected override void CreateChildControls()
         {
-            Control control = Page.LoadControl(_ascxPath);
-            Controls.Add(control);
+           
+        }
+        public void menu()
+        {
+
         }
     }
 }
