@@ -44,19 +44,36 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Microsoft.SharePoint" />
     <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="news web part\news web part.cs" />
+    <Compile Include="news web part\news web partUserControl.ascx.cs">
+      <DependentUpon>news web partUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="news web part\news web partUserControl.ascx.designer.cs">
+      <DependentUpon>news web partUserControl.ascx.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Features\Leads web part\Leads web part.feature">
+      <FeatureId>{349200c0-9bfe-4d45-ab12-c4ae93026679}</FeatureId>
+    </None>
     <None Include="Features\NewsLIst\NewsLIst.feature">
       <FeatureId>{a30f5b40-075a-4937-b9f8-177cc12455dd}</FeatureId>
     </None>
     <None Include="key.snk" />
+    <None Include="news web part\news web part.webpart" />
+    <None Include="news web part\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8ce03532-1e38-424e-9cd4-44306d8ed5c8}</SharePointProjectItemId>
+    </None>
     <None Include="News\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{1206ac2b-6be3-4ed8-abce-3f9dd1b9abe4}</SharePointProjectItemId>
     </None>
@@ -69,9 +86,14 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Features\Leads web part\Leads web part.Template.xml">
+      <DependentUpon>Leads web part.feature</DependentUpon>
+    </Content>
     <Content Include="Features\NewsLIst\NewsLIst.Template.xml">
       <DependentUpon>NewsLIst.feature</DependentUpon>
     </Content>
+    <Content Include="news web part\Elements.xml" />
+    <Content Include="news web part\news web partUserControl.ascx" />
     <Content Include="News\Elements.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
