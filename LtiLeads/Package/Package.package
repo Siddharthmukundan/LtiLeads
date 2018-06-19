@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="2b95ac09-a165-4e4c-8f52-93336ee6df5c" 
+        solutionId="2b95ac09-a165-4e4c-8f52-93336ee6df5c" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="LtiLeads"
+        sharePointProductVersion="15.0">
+</package>
